@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-image: url('C:/Users/DELL/OneDrive/Desktop/GitHub/logo.jpeg');
+            background-size: cover;
+            background-position: cover;
+            color: rgb(242, 242, 242);
+            text-align: center;
+            padding: 1em 0;
+            position: relative;
+        }
+        header h1 {
+            position: relative;
+            z-index: 1;
+            margin: 0;
+        }
+        header::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 10%;
+            background-color: rgba(0, 0, 0, 0.5); /* Optional: Add a dark overlay to improve text visibility */
+            z-index: 0;
+        }
+        nav {
+            background-color: #002244;
+            overflow: hidden;
+        }
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: #00509e;
+            color: white;
+        }
+        .content {
+            padding: 20px;
+        }
+        .profile-pic {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+        }
+        .bio {
+            margin-top: 10px;
+        }
+        footer {
+            background-color: #002244;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        ul {
+            padding: 0;
+            list-style-type: none;
+        }
+        ul li {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>WELCOME TO HOME PAGE</h1>
+    </header>
+    <nav>
+        <a href="https://www.linkedin.com/in/soham-patil-58b966282/">LinkedIn Profile</a>
+        <a href="https://github.com/soham08022001">GitHub Profile</a>
+        <a href="https://hub.docker.com/repositories/sohampatil08">DockerHub Profile</a>
+    </nav>
+    <div class="content" id="home">
+        <h2>Description</h2>
+        <p>About project:</p>
+        <p>To Access Main Page: <a href="http://ssp1008.online/">Click Here</a></p>
+    </div>
+    <div class="content" id="about" style="margin-bottom: 0px;">
+        <h2>About Me</h2>
+        <p>Highly skilled in using AWS services, Automation tools, and DevOps Tools.</p>
+        <ul style="list-style-type: disc; display: flex; flex-wrap: wrap;">
+            <li style="margin-right: 20px; margin-left: 20px;">GitHub</li>
+            <li style="margin-right: 20px; margin-left: 10px;">Docker</li>
+            <li style="margin-right: 20px; margin-left: 10px;">Kubernetes</li>
+            <li style="margin-right: 20px; margin-left: 10px;">Terraform</li>
+            <li style="margin-right: 20px; margin-left: 10px;">Ansible</li>
+            <li style="margin-right: 20px; margin-left: 10px;">Jenkins</li>
+        </ul>
+    </div>
+    <div class="content" id="contact">
+        <h2>Contact</h2>
+        <p>You can reach me at:</p>
+        <ul style="display: flex; flex-wrap: wrap; list-style-type: disc;">
+            <li style="margin-right: 20px; margin-left: 20px;">Email: sohamsatyajitpatil@gmail.com</li>
+            <li style="margin-right: 20px; margin-left: 10px;">LinkedIn: <a href="https://linkedin.com/in/yourprofile">SOHAM PATIL</a></li>
+            <li style="margin-right: 20px; margin-left: 10px;">Mobile No: +91 9867256690</li>
+        </ul>
+    </div>
+    <footer>
+        <p>&copy; 2024 SOHAM PATIL. All rights reserved.</p>
+    </footer>
+</body>
+</html>
